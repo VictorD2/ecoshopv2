@@ -32,7 +32,7 @@ module.exports = {
     ],
   },
   output: {
-    path: path.resolve(__dirname, '../..', './backend/src/public/build'),
+    path: path.resolve(__dirname, '../..', './backend/src/public'),
     filename: 'bundle.js',
   },
   plugins: [
