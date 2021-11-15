@@ -1,19 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { GoSignOut } from 'react-icons/go'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { GoSignOut } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 const NavbarDash: React.FC = () => {
-
-  /* const logOut = async () => {
-    const res = await axios.get(`${API}/logout`);
-    if (res.data.success) {
-      auth.logOut();
-      auth.setRango(1);
-      setUsuario(initialState);
-      history.push("/");
-    }
-  }; */
-
+ 
   return (
     <nav className="main-header navbar navbar-expand navbar-white navbar-light d-flex justify-content-between">
       {/* Left navbar links */}
@@ -29,12 +19,12 @@ const NavbarDash: React.FC = () => {
           </Link>
         </li>
       </ul>
-      <Link to="#" className="d-flex align-items-center pe-3 text-dark">
+      <Link  to="#" className="d-flex align-items-center pe-3 text-dark">
         <GoSignOut className="fs-4" />
         <p className="mb-1 ms-1 fs-5">Salir</p>
       </Link>
     </nav>
-  )
-}
+  );
+};
 
-export default NavbarDash
+export default NavbarDash;

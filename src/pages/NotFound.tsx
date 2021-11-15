@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../partials/Footer";
-import NavBar from "../partials/NavBar";
+import NavBar from "../partials/NavBar/NavBar";
 
 const NotFound = () => {
   useEffect(() => {

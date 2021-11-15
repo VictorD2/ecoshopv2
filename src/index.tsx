@@ -13,7 +13,6 @@ import "admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css";
 import "admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js";
 import "admin-lte/dist/js/adminlte.min.js";
 
-
 import "./styles/index.css";
 
 

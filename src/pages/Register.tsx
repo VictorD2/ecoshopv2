@@ -1,10 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../images/logo.png';
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { configScrollReveal } from "../config/config";
+import Logo from "../images/logo.png";
+import ScrollReveal from "scrollreveal";
 
 function Register() {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+    ScrollReveal().reveal(".show", configScrollReveal);
+    return () => {};
+  }, []);
+
   return (
-    <div className="content-main">
+    <div className="content-main show">
       <div className="container px-5">
         <div className="d-flex justify-content-center my-5">
           <Link to="/">
@@ -51,13 +59,14 @@ function Register() {
             Aceptar terminos y condiciones
           </label>
           <div className="d-grid col-lg-6 col-md-8 mx-auto mb-lg-0 mb-md-0 mb-5" style={{ marginTop: "4rem" }}>
-            <button className="btn btn_register mx-auto" type="button">Registrate</button>
+            <button className="btn btn_register mx-auto" type="button">
+              Registrate
+            </button>
           </div>
         </form>
       </div>
     </div>
-  )
+  );
 }
 
-export default Register
-
+export default Register;
